@@ -1,17 +1,13 @@
-// If you don't want to use TypeScript you can delete this file!
-import React from "react"
-import { PageProps } from "gatsby"
+import React from "react";
 
-type DataProps = {
-  site: {
-    buildTime: string
-  }
+interface Props {
+  name: string;
 }
 
-const IndexPage: React.FC<PageProps<DataProps>> = () => (
-  <div>
+const IndexPage: React.FC<Props> = () => (
+  <div data-testid="Here">
     <h1>Akram's CV</h1>
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;
